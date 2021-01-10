@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ShoppingCartTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-01-10T10:22:56" hostname="DESKTOP-S0MUF62" time="0.054">
+  <properties/>
+  <testcase name="EmptyTitleTest()" classname="ShoppingCartTest" time="0.023"/>
+  <testcase name="ItemTypeTest()" classname="ShoppingCartTest" time="0.002"/>
+  <testcase name="ZeroQuantityTest()" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="ZeroPriceTest()" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="CeilingOfPriceTest()" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="CeilingOfQuantityTest()" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="BigTitleTest()" classname="ShoppingCartTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
