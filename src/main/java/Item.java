@@ -7,7 +7,7 @@ public class Item {
 
     public Item(){}
 
-    public Item(String title, float price, Item.Type type, int quantity){
+    public Item(String title, float price, int quantity, Item.Type type){
         this.title = title;
         this.price = price;
         this.type = type;

@@ -1,5 +1,8 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -55,4 +58,35 @@ class ShoppingCartTest {
         });
         assertEquals("No more space in cart", exp.getMessage());
     }
+
+    @ParameterizedTest
+    @CsvSource({"1", "2", "4"})
+    public void RegularDiscountTest(int quantity){
+       assertEquals(0, ShoppingCart.calculateDiscount(new Item("Some title", 10, quantity, Item.Type.REGULAR)));
+    }
+
+    @ParameterizedTest
+    @CsvSource({"1, 0", "2, 50", "3, 50"})
+    public void SecondDiscountTest(int quantity, int expectedResult){
+        assertEquals(expectedResult, ShoppingCart.calculateDiscount(new Item("Some title", 10, quantity, Item.Type.SECOND)));
+    }
+
+    @ParameterizedTest
+    @CsvSource({"1, 10", "10, 20", "11, 20", "40, 50"})
+    public void DiscountDiscountTest(int quantity, int expectedResult){
+        assertEquals(expectedResult, ShoppingCart.calculateDiscount(new Item("Some title", 10, quantity, Item.Type.DISCOUNT)));
+    }
+
+    @ParameterizedTest
+    @CsvSource({"1, 80", "10, 80"})
+    public void SaleDiscountTest(int quantity, int expectedResult){
+        assertEquals(expectedResult, ShoppingCart.calculateDiscount(new Item("Some title", 10, quantity, Item.Type.SALE)));
+    }
+
+    @ParameterizedTest
+    @CsvSource({"100, 10", "300, 30", "900, 80", "999, 80" })
+    public  void FullDiscountTest(int quantity, int expectedResult){
+        assertEquals(expectedResult, ShoppingCart.calculateDiscount(new Item("Some title", 10, quantity, Item.Type.REGULAR)));
+    }
+
 }

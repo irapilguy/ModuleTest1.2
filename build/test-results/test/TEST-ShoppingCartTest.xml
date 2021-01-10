@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ShoppingCartTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-01-10T10:22:56" hostname="DESKTOP-S0MUF62" time="0.054">
+<testsuite name="ShoppingCartTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2021-01-10T13:08:28" hostname="DESKTOP-S0MUF62" time="0.115">
   <properties/>
-  <testcase name="EmptyTitleTest()" classname="ShoppingCartTest" time="0.023"/>
-  <testcase name="ItemTypeTest()" classname="ShoppingCartTest" time="0.002"/>
-  <testcase name="ZeroQuantityTest()" classname="ShoppingCartTest" time="0.001"/>
-  <testcase name="ZeroPriceTest()" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="DiscountDiscountTest(int, int)[1]" classname="ShoppingCartTest" time="0.039"/>
+  <testcase name="DiscountDiscountTest(int, int)[2]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="DiscountDiscountTest(int, int)[3]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="DiscountDiscountTest(int, int)[4]" classname="ShoppingCartTest" time="0.003"/>
+  <testcase name="EmptyTitleTest()" classname="ShoppingCartTest" time="0.003"/>
+  <testcase name="SaleDiscountTest(int, int)[1]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="SaleDiscountTest(int, int)[2]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="FullDiscountTest(int, int)[1]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="FullDiscountTest(int, int)[2]" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="FullDiscountTest(int, int)[3]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="FullDiscountTest(int, int)[4]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="RegularDiscountTest(int)[1]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="RegularDiscountTest(int)[2]" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="RegularDiscountTest(int)[3]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="ItemTypeTest()" classname="ShoppingCartTest" time="0.005"/>
+  <testcase name="ZeroQuantityTest()" classname="ShoppingCartTest" time="0.002"/>
+  <testcase name="ZeroPriceTest()" classname="ShoppingCartTest" time="0.002"/>
+  <testcase name="SecondDiscountTest(int, int)[1]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="SecondDiscountTest(int, int)[2]" classname="ShoppingCartTest" time="0.002"/>
+  <testcase name="SecondDiscountTest(int, int)[3]" classname="ShoppingCartTest" time="0.001"/>
   <testcase name="CeilingOfPriceTest()" classname="ShoppingCartTest" time="0.001"/>
   <testcase name="CeilingOfQuantityTest()" classname="ShoppingCartTest" time="0.001"/>
-  <testcase name="BigTitleTest()" classname="ShoppingCartTest" time="0.003"/>
+  <testcase name="BigTitleTest()" classname="ShoppingCartTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
